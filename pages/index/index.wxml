@@ -1,0 +1,19 @@
+<view class="container">
+  <!-- 顶部日期显示 -->
+  <view class="date">{{currentDate}}</view>
+  
+  <!-- 任务列表 -->
+  <view class="task-list">
+    <block wx:for="{{tasks}}" wx:key="id">
+      <view class="task-item" bindlongpress="showDeleteConfirm" data-id="{{item.id}}">
+        <text style="width:75%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{{item.name}}</text>
+        <button class="check-btn {{item.completed ? 'checked' : ''}}" bindtap="checkTask" data-id="{{item.id}}" style="width:80rpx;height:40rpx;font-size:24rpx;line-height:40rpx">
+          {{item.completed ? '已打卡' : '打卡'}}
+        </button>
+      </view>
+    </block>
+  </view>
+  
+  <!-- 添加任务按钮 -->
+  <button class="add-btn" bindtap="navigateToAdd">+ 添加任务</button>
+</view>

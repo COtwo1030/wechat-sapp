@@ -1,0 +1,70 @@
+.container {
+  background-color: #E6F7FF;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.date {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.task-list {
+  margin-bottom: 60px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-item {
+  position: relative;
+  padding-right: 33%;
+}
+
+.check-btn {
+  position: absolute;
+  right: 15px;
+  width: 80rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  border-radius: 20rpx;
+  background-color: #fff;
+  border: 1rpx solid #ddd;
+  color: #000;
+  font-size: 24rpx;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: auto;
+  max-width: none;
+  box-sizing: border-box;
+}
+
+.check-btn.checked {
+  background-color: #07C160;
+  border-color: #07C160;
+  color: #fff;
+}
+
+.add-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: #07C160;
+  color: white;
+  border-radius: 8px;
+  padding: 12px;
+}
